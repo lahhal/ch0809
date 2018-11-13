@@ -39,7 +39,6 @@ class PostDV(DetailView) :
     model = Post
 
 # 모든 아카이브 클래스에서 기준 날짜(date_filed) 속성을 modify_date로 지정
-
 # ArchiveIndexView를 상속받아서 PostAV 작성
 class PostAV(ArchiveIndexView) :
     model = Post
@@ -74,4 +73,3 @@ class PostTAV(TodayArchiveView) :
     date_field = 'modify_date'
     # URLconf에서 지정한 당일(today)에 해당하는 object_list를 구성하고
     # 이를 템플릿에 전달함
-
